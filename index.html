@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sally Johnson Resume</title>
+  </head>
+
+  <body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        //Here's a bunch of HTML w/in a function
+      function App() {
+        return (
+          <div>
+              <h1>Sally</h1>
+               <h3>555-555-5555</h3>
+               <a href="mailto:jacksoncaleb.calebjackson@gmail.com">EMAIL ME</a><br />
+               <img src="sally.jpg" alt="Sally-Profile-Pic"></img>
+               <section className="education">
+               <h3>I studied at Pretend University in Lala Land</h3>
+               </section>
+               <section className="employment">
+               <ul>
+               <li>Bob's Burgers 
+               <p>Waitress</p>
+               <p>I'm baby man bun polaroid slow-carb meggings hella pitchfork sartorial.<br/>
+                Stumptown bushwick direct trade dreamcatcher readymade<br/>
+                helvetica microdosing hot chicken forage hoodie cred brunch</p>
+               </li>
+               <li>Crusty Crab 
+               <p>Marketing Agent</p>
+               <p>I'm baby messenger bag woke wayfarers brunch.<br/>
+                Typewriter distillery DIY, chicharrones sriracha neutra<br/>
+                XOXO farm-to-table cred keffiyeh raw denim tacos kogi copper mug man braid.</p>
+               </li>
+               </ul>
+               </section>
+               <section>
+                <address>
+                  Written by <a href="mailto:jacksoncaleb.calebjackson@gmail.com">Caleb Jackson</a>.<br/>
+                  Visit me at:<br/>
+                  Youtube.com<br/>
+                  Somewhere, inTheStates<br/>
+                  USA
+              </address>
+               </section>
+            </div>
+        );
+      };
+
+      //This tells it to render the function <App />
+      ReactDOM.render(
+            <App />,
+            document.querySelector('#application-root')
+          );
+    </script>
+  </body>
+</html>

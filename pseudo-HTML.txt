@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sally Johnson Resume</title>
+  </head>
+
+  <body>
+    <div id="application-root-TEST"></div>
+  
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  
+  <script type="text/babel">
+    //
+    ReactDOM.render(
+      <div>
+        <h2>Sally</h2>
+         <h3>555-555-5555</h3>
+         <h3 href="emailsally@gmail.com">EMAIL ME</h3>
+
+         </section>
+         <section className="education">
+         <h3>I studied a Pretend University in Lala Land</h3>
+         </section>
+         <section className="employment">
+         <ul>
+         <li>JOB 1</li>
+         <li> JOB 2</li>
+         </ul>
+
+         </section>
+      </div>,
+      document.querySelector('#application-root-TEST')
+    );
+  </script>
+  </body>
+</html>
